@@ -10,7 +10,7 @@ Sysmon and Splunk. Each entry covers an attack simulation and detection.
 
 ## Lab Setup
 - **Attacker:** Kali Linux
-- **Target:** Windows 10/11 VM
+- **Target:** Windows 10 VM
 - **SIEM:** Splunk Enterprise
 - **Logging:** Sysmon (SwiftOnSecurity config)
 
