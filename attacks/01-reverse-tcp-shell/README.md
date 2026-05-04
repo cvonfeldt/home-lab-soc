@@ -54,7 +54,7 @@ All three stages of the attack were captured in Splunk via Sysmon.
 ### Event ID 1 - Payload Execution
 **Query:**
 ```
-index=main source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 "resume4.pdf.exe"
+index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" "resume4.pdf.exe" EventCode=1 
 ```
 **What it shows:**
 - `resume4.pdf.exe` executed from `C:\Users\chan\Downloads\`
@@ -67,7 +67,7 @@ index=main source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCod
 ### Event ID 1 - Meterpreter Spawns cmd.exe
 **Query:**
 ```
-index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 "resume4.pdf.exe"
+index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" "resume4.pdf.exe" EventCode=1
 ```
 **What it shows:**
 - `cmd.exe` spawned with parent process `resume4.pdf.exe`
