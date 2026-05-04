@@ -17,8 +17,5 @@ Sysmon and Splunk. Each entry covers an attack simulation and detection.
 ## Attacks & Detections
 | # | Attack | Tools Used | Status |
 |---|--------|------------|--------|
-| 01 | Reverse TCP Shell | Metasploit, Kali, msfvenom | Complete
+| 01 | Reverse TCP Shell | Kali, Metasploit, msfvenom | Complete
 
-## Setup Guides
-- [Windows VM & Sysmon Setup](lab-setup/windows-vm.md)
-- [Splunk Setup](lab-setup/splunk-setup.md)
