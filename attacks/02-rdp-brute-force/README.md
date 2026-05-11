@@ -1,7 +1,7 @@
 # 02 - RDP Brute Force & Active Directory Attack Detection
 
 ## Overview
-This documents a simulated RDP brute force attack against a domain-joined Windows 10 machine using Crowbar and xfreerdp from a Kali Linux attacker machine. Active Directory was configured with a Windows Server 2022 domain controller. All activity was detected and logged using Sysmon and Splunk. Atomic Red Team was used to simulate additional adversary techniques.
+This documents a simulated RDP brute force attack against a domain-joined Windows 10 machine using Crowbar and xfreerdp from a Kali Linux attacker machine. Active Directory was configured with a Windows Server 2022 domain controller. All activity was detected and logged using Sysmon and Splunk. Atomic Red Team was used to simulate many additional comprehensive MITRE ATT&CK adversary techniques.
 
 ## Lab Environment
 
