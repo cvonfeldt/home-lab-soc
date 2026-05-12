@@ -32,7 +32,7 @@ Installed Splunk Universal Forwarder and Sysmon (Olaf Hartong config) on both Wi
 ![Splunk Both Hosts Sending Logs](screenshots/splunk-both-hosts.png)
 
 ### 4. RDP Brute Force
-Enabled RDP on the Windows 10 target and added the domain user jsmart to the Remote Desktop Users group. From Kali, simulated a brute force attack by attempting multiple incorrect passwords followed by the correct one:
+Enabled RDP on the Windows 10 target and added the domain user jsmart to the Remote Desktop Users group. From Kali, simulated a brute force attack by attempting multiple incorrect passwords followed by the correct one (attempted crowbar bruteforce attack but ran into compatibility issues, so simulated with xfreerdp):
 
 ```bash
 xfreerdp /v:192.168.10.5 /u:jsmart /p:wrongpassword /cert:ignore
