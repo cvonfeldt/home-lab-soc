@@ -13,6 +13,7 @@ Sysmon and Splunk. Each entry covers an attack simulation and detection.
 - **Target:** Windows 10 VM
 - **SIEM:** Splunk Enterprise
 - **Logging:** Sysmon (SwiftOnSecurity config)
+- **AD:** Windows AD Server
 
 ## Attacks & Detections
 | # | Attack | Tools Used | Status |
