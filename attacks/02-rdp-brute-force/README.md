@@ -60,19 +60,9 @@ Query:index=endpoint EventCode=4625
 What it shows:
 - Multiple failed login attempts against jsmart from source IP 192.168.10.250 (Kali)
 - Rapid succession of failures indicates automated or manual brute force activity
-- Logon Type 10 confirms Remote Interactive (RDP) login attempts
 
 ![Event ID 4625 - Failed Logins](screenshots/event-id-4625-failed-logins.png)
 
-### RDP Brute Force - Successful Login
-Query: index=endpoint EventCode=4625
-
-What it shows:
-- Multiple failed login attempts against jsmart from source IP 192.168.10.250 (Kali)
-- Rapid succession of failures indicates automated or manual brute force activity
-- Logon Type 10 confirms Remote Interactive (RDP) login attempts
-
-![Event ID 4625 - Failed Logins](screenshots/event-id-4625-failed-logins.png)
 
 ### RDP Brute Force - Successful Login
 Query: index=endpoint EventCode=4624 jsmart
