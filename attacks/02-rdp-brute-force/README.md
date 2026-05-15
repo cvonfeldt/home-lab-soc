@@ -36,7 +36,10 @@ Enabled RDP on the Windows 10 target and added the domain user jsmart to the Rem
 
 ```bash
 xfreerdp /v:192.168.10.5 /u:jsmart /p:wrongpassword /cert:ignore
-xfreerdp /v:192.168.10.5 /u:jsmart /p:Dcsd164788 /cert:ignore
+xfreerdp /v:192.168.10.5 /u:jsmart /p:Hello123 /cert:ignore
+xfreerdp /v:192.168.10.5 /u:jsmart /p:Password1 /cert:ignore
+xfreerdp /v:192.168.10.5 /u:jsmart /p:Summer2026 /cert:ignore
+xfreerdp /v:192.168.10.5 /u:jsmart /p:<correct password> /cert:ignore
 ```
 
 ![Kali xfreerdp Attack](screenshots/kali-xfreerdp-attack.png)
