@@ -92,5 +92,6 @@ falsepositives:
     - Break-glass emergency accounts created by authorized personnel
 level: high
 ```
- 
 ---
+
+## The combination of Rule 1 and Rule 2 covers two distinct phases of the same attack - initial access via brute force and post-compromise persistence via backdoor account creation - meaning both the entry point and the follow-on activity are detected independently.
