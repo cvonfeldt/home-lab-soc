@@ -93,6 +93,16 @@ What it shows:
 
 ![Sysmon - PowerShell Execution](screenshots/sysmon-powershell.png)
 
+
+## MITRE ATT&CK Mapping
+
+| Technique ID | Technique Name | Tactic | Evidence |
+|---|---|---|---|
+| T1110.001 | Brute Force: Password guessing | Credential Access | Multiple Event ID 4625 failures from 192.168.10.250 (Kali) against domain user jsmart in rapid succession |
+| T1021.001 | Remote Services:RDP | lateral movement | Successful RDP login (Event ID 4624, Logon Type 10) from attacker IP following brute force - session established on port 3389 |
+| T1136.001 | Create Local Account | Persistence | New local account NewLocalUser created post-compromise via Atomic Red Team T1136.001 - confirmed in Event ID 4720 |
+| T1098 | Account Manipulation | Privilege Escalation | NewLocalUser added to Administrators group post-creation - confirmed via Event ID 4732 |
+
 ## Key Indicators of Compromise (IOCs)
 
 | Indicator | Value |
