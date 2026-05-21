@@ -1,7 +1,6 @@
-# Home Lab SOC
+# Home Lab SOC & Detection Lab
 Home lab documenting offensive and defensive security operations/techniques. Each entry covers an attack simulation and how it was detected using Sysmon and Splunk.
 
-# Home Lab - SOC & Detection Lab
 
 ## Overview
 A home lab documenting offensive and defensive security techniques using Sysmon and Splunk. Each entry covers an attack simulation, full detection methodology, process lineage analysis, and MITRE ATT&CK mapping. Each investigation includes vendor-agnostic Sigma detection rules authored from confirmed attack behavior observed during analysis.
