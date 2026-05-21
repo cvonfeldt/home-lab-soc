@@ -90,6 +90,17 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=3
 
 ---
 
+## MITRE ATT&CK Mapping
+
+| Technique ID | Technique Name | Tactic | Evidence |
+|---|---|---|---|
+| T1204.002 | User Execution: Malicious File | Execution | User executed resume4.pdf.exe from Downloads directory after being socially engineered by double extension naming |
+| T1059.003 | Command and Scripting Interpreter: Windows Command Shell | Execution | cmd.exe spawned by resume4.pdf.exe confirmed via Sysmon EventCode 1 - anomalous for a file downloaded from the internet |
+| T1571 | Non-Standard Port | Command & Control | Outbound TCP connection to attacker IP on port 4444 (default Metasploit listener port) confirmed via Sysmon EventCode 3 |
+| T1095 | Non-Application Layer Protocol | Command & Control | Meterpreter uses a custom binary protocol over raw TCP rather than HTTP/HTTPS, confirmed by raw TCP connection in Sysmon EventCode 3 |
+
+---
+
 ## Key Indicators of Compromise (IOCs)
 | Indicator | Value |
 |-----------|-------|
