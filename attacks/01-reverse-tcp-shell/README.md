@@ -101,7 +101,7 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=3
 ---
 <br>
 <br>
-<br>
+
 ## MITRE ATT&CK Mapping
 
 | Technique ID | Technique Name | Tactic | Evidence |
