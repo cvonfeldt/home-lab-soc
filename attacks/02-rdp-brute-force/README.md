@@ -23,15 +23,21 @@ Configured Windows Server 2022 as a domain controller for mydfir.local. Created 
 
 ![Active Directory OUs and Users](screenshots/ad-users-and-computers.png)
 
+<br> 
+
 ### 2. Domain Join Verification
 Confirmed Windows 10 target machine successfully joined the mydfir.local domain.
 
 ![Windows 10 Domain Join](screenshots/windows10-domain-joined.png)
 
+<br> 
+
 ### 3. Configure Logging
 Installed Splunk Universal Forwarder and Sysmon (Olaf Hartong config) on both Windows 10 and Windows Server 2022. Configured inputs.conf to forward Security, Application, System, and Sysmon logs to the Splunk SIEM at index=endpoint. Verified both machines are sending logs to Splunk.
 
 ![Splunk Both Hosts Sending Logs](screenshots/splunk-both-hosts.png)
+
+<br> 
 
 ### 4. RDP Brute Force
 Enabled RDP on the Windows 10 target and added the domain user jsmart to the Remote Desktop Users group. From Kali, simulated a brute force attack by attempting multiple incorrect passwords followed by the correct one (attempted crowbar bruteforce attack but ran into compatibility issues, so simulated with xfreerdp):
@@ -45,6 +51,8 @@ xfreerdp /v:192.168.10.5 /u:jsmart /p:<correct password> /cert:ignore
 ```
 
 ![Kali xfreerdp Attack](screenshots/kali-xfreerdp-attack.png)
+
+<br> 
 
 ### 5. Atomic Red Team
 Installed Invoke-AtomicRedTeam on Windows 10 and ran the following MITRE ATT&CK techniques:
