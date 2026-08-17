@@ -19,7 +19,7 @@ A home lab documenting offensive and defensive security techniques using Sysmon 
 |---|--------|------------|--------|
 | 01 | Reverse TCP Shell | Kali, Metasploit, msfvenom, Splunk | Complete |
 | 02 | RDP Brute Force & AD Attack | Crowbar, xfreerdp, ART, Splunk, Python | Complete |
-| 03 | DNS Tunneling Detection | dnscat2, Sysmon, Splunk, PowerShell | In Progress |
+| 03 | DNS Tunneling Detection | dnscat2, Sysmon, Splunk, PowerShell | Complete |
 
 
 ## Automation & Scripting
